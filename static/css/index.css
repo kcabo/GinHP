@@ -6,13 +6,10 @@ main {
 
 #hero {
   height: 420px;
-  /* background-image: url('../img/mesh.png'), url('../img/trio.jpg'); */
-  /* background-image: url('../img/mesh.png'), url('../img/yagi.png');
+  background-image: url('../img/mesh.png'), url('../img/someone.jpeg');
   background-repeat: repeat, no-repeat;
   background-position: left, center 10%;
-  background-size: auto, cover; */
-  background: var(--primary);
-  /* background: var(--secondary); */
+  background-size: auto, cover;
   overflow: hidden;
   /* filter: brightness(60%); */
 }
