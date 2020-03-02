@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Roboto:100,400,700&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:900&display=swap');
+:root {
+  --purple: #7371FC;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  background: #f2f4f7;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+#hero {
+  height: 600px;
+  background-image: url('../img/mesh.png'), url('../img/mikiya_back.jpg');
+  background-repeat: repeat, no-repeat;
+  background-position: left, center top;
+  background-size: auto, cover;
+  filter: brightness(90%);
+}
+#hero .team {
+  color: white;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 30px;
+}

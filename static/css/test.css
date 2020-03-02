@@ -1,0 +1,10 @@
+span {
+  text-align: center;
+  font-size: 6rem;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+  color: #7773;
+}
+span.init {
+  transform: scale(0.4, 0.4);
+  color: black;
+}
