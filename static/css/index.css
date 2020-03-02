@@ -17,12 +17,12 @@ main {
 }
 
 #hero {
-  height: 600px;
-  background-image: url('../img/mesh.png'), url('../img/mikiya_back.jpg');
+  height: 420px;
+  background-image: url('../img/mesh.png'), url('../img/trio.jpg');
   background-repeat: repeat, no-repeat;
-  background-position: left, center top;
+  background-position: left, center 10%;
   background-size: auto, cover;
-  filter: brightness(90%);
+  /* filter: brightness(60%); */
 }
 #hero .team {
   color: white;
@@ -30,4 +30,8 @@ main {
   font-size: 3rem;
   letter-spacing: 2px;
   padding: 30px;
+}
+#hero .team p {
+  line-height: 1.4;
+  font-size: 20px;
 }
