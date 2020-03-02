@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Roboto:100,400,700&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:900&display=swap');
-:root {
-  --purple: #7371FC;
-}
-
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
-  background: #f2f4f7;
-}
 main {
   max-width: 800px;
   margin: auto;
@@ -23,7 +11,8 @@ main {
   background-repeat: repeat, no-repeat;
   background-position: left, center 10%;
   background-size: auto, cover; */
-  background: #17255A;
+  background: var(--primary);
+  /* background: var(--secondary); */
   overflow: hidden;
   /* filter: brightness(60%); */
 }
@@ -70,4 +59,13 @@ main {
 #hero .team.init .l {
   opacity: 1;
   transform: scale(1);
+}
+
+footer {
+   background: #0C0910;
+   color: white;
+}
+footer #copyright {
+  padding: 30px 0 10px;
+  text-align: center;
 }
