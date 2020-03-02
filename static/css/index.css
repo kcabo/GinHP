@@ -18,7 +18,8 @@ main {
 
 #hero {
   height: 420px;
-  background-image: url('../img/mesh.png'), url('../img/trio.jpg');
+  /* background-image: url('../img/mesh.png'), url('../img/trio.jpg'); */
+  background-image: url('../img/mesh.png'), url('../img/yagi.png');
   background-repeat: repeat, no-repeat;
   background-position: left, center 10%;
   background-size: auto, cover;
@@ -28,10 +29,30 @@ main {
   color: white;
   font-family: 'Noto Serif JP', serif;
   font-size: 3rem;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   padding: 30px;
 }
 #hero .team p {
   line-height: 1.4;
   font-size: 20px;
+}
+#hero .letters {
+  /* overflow: hidden; */
+  /* display: flex; */
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -6px;
+}
+#hero .team .l {
+  display: inline-block;
+  opacity: 0.2;
+  transform: scale(11, 11);
+}
+#hero .l1 {transition: .4s 0s;}
+#hero .l2 {transition: .4s .1s;}
+#hero .l3 {transition: .4s .2s;}
+
+#hero .team.init .l {
+  opacity: 1;
+  transform: scale(1);
 }
