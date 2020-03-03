@@ -5,57 +5,40 @@ main {
 }
 
 #hero {
-  height: 420px;
-  background-image: url('../img/mesh.png'), url('../img/someone.jpeg');
-  background-repeat: repeat, no-repeat;
-  background-position: left, center 10%;
-  background-size: auto, cover;
+  height: 480px;
+  background-image: url('../img/someone.jpeg');
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
   overflow: hidden;
   /* filter: brightness(60%); */
 }
 #hero .team {
   color: white;
   font-family: 'Noto Serif JP', serif;
-  font-size: 3rem;
-  /* letter-spacing: 2px; */
-  padding: 30px;
-}
-#hero .team p {
-  line-height: 1.4;
-  font-size: 20px;
+  padding: 100px 30px 0;
 }
 #hero .team .row {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-
+  font-size: 0px;
+  max-width: 400px;
+  margin: auto;
+  text-align-last: justify;
+  text-justify:inter-ideograph;
 }
-#hero .team .row .bg {
-  background: white;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  transition: .3s .1s;
-}
-#hero .team.init .bg {
-  right: -100%;
-}
-#hero .letters {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -8px;
-}
-#hero .team .l {
+#hero .team .row span {
+  font-size: 40px;
   display: inline-block;
   opacity: 0;
   transform: scale(11, 11);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-
-#hero .team.init .l {
+#hero .team.init .row span {
   opacity: 1;
   transform: scale(1);
+}
+#hero .row:last-child span {
+  font-size: 60px;
 }
 
 footer {
