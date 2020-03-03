@@ -5,21 +5,21 @@ main {
 }
 
 #hero {
-  height: 100vh;
+  height: 400px;
   background-image: url('../img/someone.jpeg');
   background-repeat: no-repeat;
-  background-position: center 10%;
+  background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   overflow: hidden;
 }
 #hero .team {
   color: white;
   font-family: 'Noto Serif JP', serif;
-  padding: 40% 30px;
+  padding: 90px 30px 10px;
   height: 100%;
-  background: #010424;
-  transition: 2s .8s;
+  background: #010211;
+  transition: 2s ease-in .8s;
+  z-index: 100;
 }
 #hero .team.init {
   background: #0000;
@@ -33,6 +33,7 @@ main {
 }
 #hero .team .row span {
   font-size: 40px;
+  line-height: 1.2;
   display: block;
   opacity: 0;
   transform: scale(11, 11);
@@ -45,6 +46,33 @@ main {
 }
 #hero .row:last-child span {
   font-size: 60px;
+  line-height: 1.1;
+}
+#hero .trial {
+  margin: -100px auto 0;
+  color: white;
+  font-size: 1.6rem;
+  padding: 6px 0;
+  letter-spacing: 1px;
+  text-align: center;
+  opacity: 0;
+  font-weight: bold;
+  transition: 0.9s 1.8s;
+  display: block;
+  text-decoration: none;
+}
+#hero .team.init + .trial {
+  opacity: 1;
+}
+#hero .trial i {
+  display: block;
+  padding: 2px;
+  animation: arrowmove .8s ease infinite;
+}
+@keyframes arrowmove {
+  0% {margin-top: 0}
+	50% {margin-top: 2px;}
+	100% {margin-top: 0;}
 }
 
 footer {
