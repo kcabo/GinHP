@@ -6,7 +6,7 @@ main {
 
 #hero {
   height: 400px;
-  background-image: url('../img/someone.jpeg');
+  background-image: url('../img/someone.jpg');
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
@@ -130,7 +130,7 @@ main {
   line-height: 2;
 }
 #about h3 {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   font-size: 1.6rem;
   line-height: 1.8;
 }
@@ -138,6 +138,7 @@ main {
   line-height: 1.8;
   font-size: 1.4rem;
   color: #222;
+  text-align: justify;
 }
 
 footer {
