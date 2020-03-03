@@ -5,17 +5,24 @@ main {
 }
 
 #hero {
-  height: 480px;
+  height: 100vh;
   background-image: url('../img/someone.jpeg');
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
 }
 #hero .team {
   color: white;
   font-family: 'Noto Serif JP', serif;
-  padding: 100px 30px 0;
+  padding: 40% 30px;
+  height: 100%;
+  background: #010424;
+  transition: 2s .8s;
+}
+#hero .team.init {
+  background: #0000;
 }
 #hero .team .row {
   font-size: 0px;
