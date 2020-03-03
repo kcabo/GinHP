@@ -8,7 +8,7 @@ main {
   height: 400px;
   background-image: url('../img/someone.jpeg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 30%;
   background-size: cover;
   overflow: hidden;
 }
@@ -99,10 +99,10 @@ main {
   letter-spacing: 2px;
 }
 #recruit .role:first-child a {
-  background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.6) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
 }
 #recruit .role:nth-child(2) a {
-  background: linear-gradient(270deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
+  background: linear-gradient(270deg, rgba(0,0,0,0.6) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
   text-align: right;
 }
 #recruit .msg {
@@ -120,6 +120,25 @@ main {
   line-height: 1;
 }
 
+#about {
+  padding: 40px 30px;
+}
+#about h2 {
+  color: #aaa;
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 2;
+}
+#about h3 {
+  padding-bottom: 12px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+#about p {
+  line-height: 1.8;
+  font-size: 1.4rem;
+  color: #222;
+}
 
 footer {
    background: #0C0910;
