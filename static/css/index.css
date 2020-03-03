@@ -75,6 +75,52 @@ main {
 	100% {margin-top: 0;}
 }
 
+#recruit {
+  --row-height: 82px;
+  position: relative;
+}
+#recruit .role:first-child {background-image: url('../img/hinano.jpg');}
+#recruit .role:nth-child(2) {background-image: url('../img/kohei.jpg');}
+#recruit .role {
+  background-repeat: no-repeat;
+  background-position: right 20%;
+  background-size: cover;
+  height: var(--row-height);
+}
+#recruit .role a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.8rem;
+  line-height: var(--row-height);
+  height: var(--row-height);
+  display: block;
+  padding: 0 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#recruit .role:first-child a {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
+}
+#recruit .role:nth-child(2) a {
+  background: linear-gradient(270deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0) 80%);
+  text-align: right;
+}
+#recruit .msg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 70px;
+  color: #fff3;
+  letter-spacing: 10px;
+  text-align: center;
+  font-weight: bold;
+  height: 70px;
+  width: 100%;
+  line-height: 1;
+}
+
+
 footer {
    background: #0C0910;
    color: white;
