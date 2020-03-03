@@ -11,7 +11,6 @@ main {
   background-position: center 10%;
   background-size: cover;
   overflow: hidden;
-  /* filter: brightness(60%); */
 }
 #hero .team {
   color: white;
@@ -22,12 +21,12 @@ main {
   font-size: 0px;
   max-width: 400px;
   margin: auto;
-  text-align-last: justify;
-  text-justify:inter-ideograph;
+  display: flex;
+  justify-content: space-between;
 }
 #hero .team .row span {
   font-size: 40px;
-  display: inline-block;
+  display: block;
   opacity: 0;
   transform: scale(11, 11);
   transition-duration: 1s;
