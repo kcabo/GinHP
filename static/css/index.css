@@ -61,10 +61,11 @@ header .club {
   font-size: 60px;
   line-height: 1.1;
 }
-#hero .trial {
+
+#hero .links {
   margin: -100px auto 0;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding: 6px 0;
   letter-spacing: 1px;
   text-align: center;
@@ -73,23 +74,19 @@ header .club {
   transition: 0.9s 1.8s;
   display: block;
   text-decoration: none;
+  background: #40b652;
+  width: 180px;
+  border-radius: 50px;
+  line-height: 22px;
+  border: solid 1px white;
 }
-#hero .team.init + .trial {
+#hero .team.init + .links {
   opacity: 1;
-}
-#hero .trial i {
-  display: block;
-  padding: 2px;
-  animation: arrowmove .8s ease infinite;
-}
-@keyframes arrowmove {
-  0% {margin-top: 0}
-	50% {margin-top: 2px;}
-	100% {margin-top: 0;}
 }
 
 #recruit {
   position: relative;
+  display: none;
 }
 #recruit h2 {
   font-size: 2rem;
@@ -158,6 +155,58 @@ header .club {
   font-size: 1.4rem;
   color: #222;
   text-align: justify;
+}
+
+#pane {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pane a {
+  background: black;
+  color: white;
+  text-decoration: none;
+  width: 33.3%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 0;
+}
+#pane a:nth-of-type(1) {
+  background-image: url('../img/groupphoto.jpg');
+}
+#pane a:nth-of-type(2) {
+  background-image: url('../img/cheers.jpg');
+}
+#pane a:nth-of-type(3) {
+  background-image: url('../img/training.jpg');
+}
+#pane a:nth-of-type(4) {
+  background-image: url('../img/pool.jpg');
+}
+#pane a:nth-of-type(5) {
+  background-image: url('../img/ski.jpg');
+}
+#pane a:nth-of-type(6) {
+  background-image: url('../img/meet.jpg');
+}
+#pane a::before {
+  content: '';
+  position: absolute;
+  background-image: inherit;
+  filter: brightness(70%);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#pane a:hover::before {
+  filter: brightness(100%);
 }
 
 footer {
